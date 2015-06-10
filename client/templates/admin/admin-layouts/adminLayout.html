@@ -1,0 +1,22 @@
+<template name="adminLayout">
+  <nav>
+    <div class="nav-wrapper teal">
+    <div class="container">
+      <a href="#" data-activates="slide-out" class="button-collapse right"><i class="mdi-navigation-menu center"></i></a>
+      </div>
+    </div>
+  </nav>
+	<ul id="slide-out" class="side-nav fixed grey darken-3">
+    <a class="center" href="{{ pathFor 'home'}}"><img width="56px" src="images/logo.svg"></a>
+    <li class="divider"></li>
+    <li><a href="#!">DASHBOARD <i class="mdi-navigation-apps small left"></i></a></li>
+    <li><a href="#!">NEW POST <i class="mdi-editor-publish small left"></i></a></li> 
+    <li><a href="#!">UPLOADS <i class="mdi-image-collections small left"></i></a></li>
+    <li><a href="#!">PROFILE <i class="mdi-social-person small left"></i></a></li>
+    <li><a href="#!">SETTINGS <i class="mdi-device-developer-mode small left"></i></a></li>
+  </ul>
+  <div class="container">
+    {{> yield}}
+  </div>
+
+</template>
