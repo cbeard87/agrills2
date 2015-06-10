@@ -1,0 +1,149 @@
+a {
+	color: #009688;
+	background: transparent;
+}
+
+a.logo-text {
+	margin-left: 3em;
+	line-height: 1em;
+	margin-top: 12px;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	span {
+		font-size: 0.75em;
+		font-weight: 300;
+	}
+}
+
+.logo-img {
+	margin-top: 6px;
+}
+
+footer.page-footer {
+	background: #333;
+	-webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+	        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+	&>.container {
+		margin-bottom: 4em;
+		margin-top: 4em;
+	}
+	.footer-copyright {
+		background: #222;
+	}
+}
+
+img.circle {
+	width: 36px;
+	margin: 0 6px 0 0;
+	float: left;
+}
+
+ul>li:hover {
+	background: #009688 !important;
+}
+
+ul>li.active {
+	background: #009688 !important;
+}
+
+.banner {
+	background-attachment: fixed;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+	        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+	.content-scroll {
+		position: relative;
+		top: 90%;
+	}
+}
+
+footer .blog-meta:hover {
+	background: #333 !important;
+	.blog-title:hover {
+		background: #333 !important;
+	}
+	.blog-date:hover {
+		background: #333 !important;
+	}
+}
+
+.fixed-action-btn>ul li:hover {
+	background: none !important;
+}
+
+div.col.s12.m8.offset-m2.l4.offset-l4.z-depth-1 {
+	margin-top: 10%;
+	padding-bottom: 2em;
+}
+
+@media (max-width: 992px) {
+	.logo-img {
+		margin-right: 5em;
+		padding-top: 0.05em;
+	}
+	a.logo-text {
+		//margin-top: 0.25em;
+		padding-top: 0.15em;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo-img {
+		margin-right: 5em;
+		margin-top: 2px;
+	}
+	a.logo-text {
+		margin-top: 0;
+		padding-top: 0.6em;
+	}
+	footer.page-footer>.container {
+		padding-bottom: 4em;
+		padding-top: 5em;
+		.row>.col {
+			text-align: center;
+			margin-top: 2em;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.logo-img {
+		margin-right: 3.5em;
+		padding-top: 0.05em;
+		width: 40px;
+	}
+	a.logo-text {
+		padding-left: 1em;
+		padding-top: 0.5em;
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 400px) {
+	.logo-img {
+		margin-right: 3.5em;
+		padding-top: 0.05em;
+		width: 40px;
+	}
+	a.logo-text {
+		padding-left: 1em;
+		padding-top: 0.5em;
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 350px) {
+	.logo-img {
+		margin-right: 2.0em;
+		padding-top: 0.15em;
+		width: 40px;
+	}
+	a.logo-text {
+		//margin-top: 0;
+		padding-top: 0.5em;
+		font-size: 1em;
+	}
+}
+
+

@@ -1,0 +1,24 @@
+<template name="_footer">
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col m4 s12 grey-text text-lighten-4">
+          <!-- <p class="grey-text text-lighten-4"> -->
+          <img src="images/agcrop.jpg" class="circle responsive-img">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat asperiores facilis libero corporis, enim sit doloribus est sunt soluta rem, unde accusamus in quos...
+            <a href="{{pathFor 'about' }}">Read More</a>
+          <!-- </p> -->
+        </div>
+        <div class="col m4 s12 offset-m4 grey-text text-lighten-4 right-align">
+          <!-- <p class="grey-text text-lighten-4 right-align"> -->
+          <!-- </p> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="row center-align">
+        &copy; 2015 Anthony Grills | {{#if currentUser}} <a href="#" data-action="logout">Sign Out</a>{{else}} <a href="/sign-in">Sign In</a>{{/if}}
+      </div>
+    </div>
+  </footer>
+</template>

@@ -1,0 +1,115 @@
+.home-banner {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/home.jpg');
+	background-size: cover;
+	background-position: top;
+}
+
+div.center {
+	h4 {
+		color: #F1F2F3;
+		text-transform: uppercase;
+		font-weight: 500;
+		text-align: center;
+		font-size: 5em;
+		margin-top: 4em;
+	}
+	h5 {
+		color: #B6BAC3;
+		text-align: center;
+		font-size: 3em;
+		font-weight: 300;
+		line-height: 1.25em;
+	}
+	i {
+		margin-top: 3em;
+		color: #B6BAC3;
+		font-size: 6em;
+	}
+	hr {
+		width: 10%;
+		height: 0.4em;
+		background: #009688;
+		margin-top: 5em;
+		border: none;
+	}
+}
+
+h4 #blog-latest-widget>a {
+	font-size: 16px;
+	text-transform: uppercase;
+
+}
+
+h4 .blog-meta {
+	font-size: 1em;
+	.blog-title {
+		font-size: 0.75em !important;
+		text-transform: uppercase !important;
+		text-align: center;
+	}
+	.blog-date {
+		font-size: 0.5em !important;
+		color: #222 !important;
+		text-align: center;
+	}
+}
+
+h4 .blog-meta:hover {
+	background: #EEEEEE;
+	.blog-title:hover {
+		background: #EEEEEE !important;
+	}
+	.blog-date:hover {
+		background: #EEEEEE !important;
+	}
+}
+
+@media (max-width: 1400px) {
+	div.center {
+		h4 {
+			margin-top: 2em;
+		}
+		i {
+			margin-top: 1em;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	img.materialboxed {
+		margin-bottom: 1em;
+	}
+
+	.home-banner {
+		padding-bottom: 1em;
+		background-size: 480px 800px;
+		background-repeat: no-repeat;
+	}
+
+	div.center {
+		h4 {
+			line-height: 1em;
+			font-size: 3em;
+		}
+		h5 {
+			font-size: 2em;
+		}
+		hr {
+			text-align: left;
+			margin-top: 2em;
+			width: 20%;
+		}
+	}
+
+	div.testimonial {
+		padding-bottom: 6em;
+	}
+
+	i.mdi-communication-call-merge {
+		font-size: 8em;
+	}
+
+	.meteor-feature {
+		margin-bottom: -9em
+	}
+}

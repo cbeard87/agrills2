@@ -1,0 +1,12 @@
+.blog-banner {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/blog.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+article.post {
+	background: #FFFFFF !important;
+	padding-top: 2em !important;
+	padding-left: 2em !important;
+	padding-right: 2em !important;
+}

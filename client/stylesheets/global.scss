@@ -1,0 +1,47 @@
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #EEEEEE;
+}
+
+div.main {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+  top: -64px;
+}
+
+.loading {
+  padding-top: 100px;
+  color: #29ABE2 !important;
+}
+
+nav {
+  margin-bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo-img {
+	width: 48px;
+}
+
+ul.side-nav.fixed li a {
+  line-height: 1em;
+  padding: 24px;
+  display: block;
+  color: white;
+}
+
+ul.side-nav li {
+  float: none;
+}
+
+div.mediumInsert-buttons {
+	color: #222 !important;
+}
