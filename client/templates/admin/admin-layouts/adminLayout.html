@@ -9,11 +9,11 @@
 	<ul id="slide-out" class="side-nav fixed grey darken-3">
     <a class="center" href="{{ pathFor 'home'}}"><img width="56px" src="images/logo.svg"></a>
     <li class="divider"></li>
-    <li><a href="#!">DASHBOARD <i class="mdi-navigation-apps small left"></i></a></li>
-    <li><a href="#!">NEW POST <i class="mdi-editor-publish small left"></i></a></li> 
-    <li><a href="#!">UPLOADS <i class="mdi-image-collections small left"></i></a></li>
-    <li><a href="#!">PROFILE <i class="mdi-social-person small left"></i></a></li>
-    <li><a href="#!">SETTINGS <i class="mdi-device-developer-mode small left"></i></a></li>
+    <li class="{{ isActiveRoute regex='dasboard' }}"><a href="{{ pathFor 'dashboard' }}">DASHBOARD <i class="mdi-navigation-apps small left"></i></a></li>
+    <li class="{{ isActiveRoute regex='adminBlog' }}"><a href="{{ pathFor 'adminBlog' }}">NEW POST <i class="mdi-editor-publish small left"></i></a></li> 
+    <li class="{{ isActiveRoute regex='adminUploads' }}"><a href="{{ pathFor 'adminUploads' }}">UPLOADS <i class="mdi-image-collections small left"></i></a></li>
+    <li class="{{ isActiveRoute regex='adminProfile' }}"><a href="{{ pathFor 'adminProfile' }}">PROFILE <i class="mdi-social-person small left"></i></a></li>
+    <li class="{{ isActiveRoute regex='adminSettings' }}"><a href="{{ pathFor 'adminSettings' }}">SETTINGS <i class="mdi-device-developer-mode small left"></i></a></li>
   </ul>
   <div class="container">
     {{> yield}}

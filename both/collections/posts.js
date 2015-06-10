@@ -27,7 +27,7 @@ var postSchema = new SimpleSchema({
     		label: 'Post Date',
     		type: Date,
             autoValue: function() {
-                return new moment();
+                return new date();
             }
     },
     postSlug: {

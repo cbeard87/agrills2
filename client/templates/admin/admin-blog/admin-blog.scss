@@ -1,0 +1,28 @@
+.editor {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    right: 60px;
+    bottom: 100px;
+
+    .entry-markdown {
+        flex: 1;
+        background: white;
+        height: 100%;
+        padding: 5px;
+    } 
+
+    .entry-preview {
+        flex: 1;
+        background: white;
+        margin-left: 20px;
+        height: 100%;
+        padding: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100%;
+    }
+}

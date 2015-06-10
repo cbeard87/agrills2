@@ -25,11 +25,11 @@ Router.route('/contact', {
   name: 'contact'
 });
 
-Router.plugin('ensureSignedIn', {
-  only: ['dashboard']
-});
-
 //Administrator Routes
+
+Router.plugin('ensureSignedIn', {
+  only: ['dashboard', 'adminBlog', 'adminProfile', 'adminUploads', 'adminSettings']
+});
 
 Router.route('/dashboard', {
   name: 'dashboard',
