@@ -21,29 +21,38 @@ var postSchema = new SimpleSchema({
     		type: String,
             autoValue: function() {
                 return Meteor.user().profile.name;
+            },
+            autofrom: {
+                omit: true
             }
     },
     postDate: {
     		label: 'Post Date',
     		type: Date,
             autoValue: function() {
-                return new date();
+                return moment();
+            },
+            autoform: {
+                omit: true
             }
     },
     postSlug: {
     		label: 'Post Slug',
     		type: String,
-            autoValue: function(doc) {
-                return this.field('postTitle')
+            autoValue: function(document) {
+                return document.postTitle
                     .toLowerCase()
                     .replace(/[^\w ]+/g,'')
-                    .replace(/ +/g,'-');
-                
+                    .replace(/ +/g,'-');   
+            },
+            autoform: {
+                omit: true
             }
     },
     postTags: {
-    		label: 'Post Tags',
-    		type: String
+    		label: 'SEO Tags',
+    		type: [String],
+            optional: true
     }
 });
 

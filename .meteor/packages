@@ -28,6 +28,6 @@ fastclick
 velocityjs:velocityjs
 markdown
 meteorhacks:fast-render
-jeremy:ghostdown
 joshowens:shareit
 fortawesome:fontawesome
+froala:editor-reactive
